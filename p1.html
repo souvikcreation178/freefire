@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set character encoding and responsive viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Fire - Official Web Page</title>
+    <style>
+        /* Reset default margins and set a dark background theme for the gaming look */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0b0e14;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        /* Top Navigation Bar */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(11, 14, 20, 0.9);
+            border-bottom: 2px solid #ff5500;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff5500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        /* Highlight menu items when hovering over them */
+        nav ul li a:hover {
+            color: #ff5500;
+        }
+
+        /* Hero Section with background styling */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(11, 14, 20, 1)), 
+                        url('https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            padding: 0 20px;
+            margin-top: 60px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            color: #ffcc00;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 600px;
+            color: #cccccc;
+            margin-bottom: 30px;
+        }
+
+        /* Call to Action Button */
+        .download-btn {
+            background: linear-gradient(45deg, #ff5500, #ffcc00);
+            color: #0b0e14;
+            padding: 15px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(255, 85, 0, 0.4);
+            transition: transform 0.2s, background 0.3s;
+        }
+
+        /* Make the button pop out slightly when hovered */
+        .download-btn:hover {
+            transform: scale(1.05);
+            background: linear-gradient(45deg, #ff7722, #ffee00);
+        }
+
+        /* Features Section */
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 80px 50px;
+            background-color: #121824;
+        }
+
+        .feature-card {
+            background-color: #1a2233;
+            border: 1px solid #2a354d;
+            border-radius: 8px;
+            padding: 30px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        /* Lift the card up when the mouse hovers over it */
+        .feature-card:hover {
+            transform: translateY(-10px);
+            border-color: #ff5500;
+        }
+
+        .feature-card h3 {
+            color: #ff5500;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .feature-card p {
+            color: #aaaaaa;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        /* Simple Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #080a0e;
+            color: #666666;
+            font-size: 14px;
+            border-top: 1px solid #1a2233;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Free Fire</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Esports</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Hero Banner -->
+    <section class="hero">
+        <h1>Battle in Style</h1>
+        <p>The ultimate survival shooter game available on mobile. Drop in, loot up, and survive to become the champion!</p>
+        <button class="download-btn">Download Now</button>
+    </section>
+
+    <!-- Game Highlights Section -->
+    <section class="features">
+        <div class="feature-card">
+            <h3>Classic Survival</h3>
+            <p>50 players parachute onto a remote island, but only one will leave victorious.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Squad Up</h3>
+            <p>Create squads of up to 4 players and establish communication with your team from the very first moment.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Epic Events</h3>
+            <p>Participate in regular seasonal events, unlock exclusive character skins, and win rewards.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Garena Free Fire. Fan-made styled concept page.</p>
+    </footer>
+
+</body>
+</html>
